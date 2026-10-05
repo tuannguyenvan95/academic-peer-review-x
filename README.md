@@ -1,14 +1,28 @@
 # AcademicPeerReviewX — Decentralized Research Grant & Peer-Review Publication Arbiter
 
 > **Track:** Future of Work / Public Goods / DeSci (Decentralized Science)  
-> **Network:** GenLayer studionet / localnet  
+> **Network:** GenLayer studionet (Chain ID: `61999` / `0xF1EF`)  
+> **Contract Address:** `0x68eb7f11bcec867955292a3a2050eD1337CB0E8C`  
+> **Target Environment:** [GenLayer Studio](https://studio.genlayer.com)  
 > **Execution Engine:** GenVM / Optimistic Democracy Subjective Consensus  
 > **Package / SDK:** `py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6`  
 > **Test Suite:** 15 unit tests passing (`gltest` / `pytest`)
 
 ---
 
-## 1. Project Overview & Architectural Highlights
+## 1. Deployment & Live Network Evidence
+
+The `AcademicPeerReviewX` Intelligent Contract is successfully deployed on GenLayer studionet:
+
+- **Contract Address:** `0x68eb7f11bcec867955292a3a2050eD1337CB0E8C`
+- **Network:** `studionet` (Chain ID: `61999` / `0xF1EF`)
+- **Explorer:** [https://explorer.genlayer.com/address/0x68eb7f11bcec867955292a3a2050eD1337CB0E8C](https://explorer.genlayer.com/address/0x68eb7f11bcec867955292a3a2050eD1337CB0E8C)
+- **Studio Explorer:** [https://explorer-studio.genlayer.com/address/0x68eb7f11bcec867955292a3a2050eD1337CB0E8C](https://explorer-studio.genlayer.com/address/0x68eb7f11bcec867955292a3a2050eD1337CB0E8C)
+- **Contract Source:** [`contracts/academic_peer_review_x.py`](contracts/academic_peer_review_x.py)
+
+---
+
+## 2. Project Overview & Architectural Highlights
 
 `AcademicPeerReviewX` is an Intelligent Contract on GenLayer built to modernize scientific research grants, citation bounties, and peer-review escrow settlement. It replaces centralized grant committee bottlenecks and opaque funding decisions with deterministic, transparent, and AI-assisted DeSci agreements.
 
@@ -33,7 +47,7 @@
 
 ---
 
-## 2. Worked Example: Escrow Lifecycle & Consensus
+## 3. Worked Example: Escrow Lifecycle & Consensus
 
 ### Step A: Grant Creation & Escrow Deposit
 - **Funder (Alice):** `0x2bd806c97F0e00aF1a1fC3328fA763a9269723C8`
@@ -94,7 +108,7 @@
 
 ---
 
-## 3. Contract Specification
+## 4. Contract Specification
 
 ### Public Methods
 
@@ -114,7 +128,7 @@
 
 ---
 
-## 4. Verification & Testing
+## 5. Verification & Testing
 
 The project includes a comprehensive test suite executed with `gltest` and `pytest`:
 
@@ -141,7 +155,7 @@ pytest -v
 
 ---
 
-## 5. Development Setup & Deployment
+## 6. Development Setup & Deployment
 
 ### Prerequisites
 - Python 3.12+ or 3.13
